@@ -42,12 +42,18 @@ export default function Home() {
   }, [])
 
   return (
-    <div>
+    <div className='m-2'>
       <h1>Deposit 0.005 ETH</h1>
-      <button onClick={deposit}>Deposit</button>
+      <button
+        className='bg-black text-white rounded-md p-1 mt-2'
+        onClick={deposit}
+      >Deposit</button>
 
-      <h1>Withdraw all my Deposit</h1>
-      <button onClick={withdraw}>Withdraw</button>
+      <h1 className='mt-2'>Withdraw all my Deposit</h1>
+      <button
+        className='bg-black text-white rounded-md p-1 mt-2'
+        onClick={withdraw}
+      >Withdraw</button>
     </div>
   )
 }
